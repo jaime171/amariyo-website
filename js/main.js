@@ -1,36 +1,33 @@
 $(function(){
-	//$(".section-menu").fadeIn(2500);
-var butonCount = 1;
+//$(".section-menu").fadeIn(2500);
+	var butonCount = 0;
 	$(".section-menu").click(function(){
+
 		var lightbox = $(".lightbox-menu"),
 		firstBar = $("#line-1"),
 		secondBar = $("#line-2"),
 		thirdBar = $("#line-3");
-		$(this).css('z-index', 1000);
-		$(this).css({"opacity": 1});
-		// lightbox.animate({width:'toggle'},800);
-		lightbox.slideDown(800);
-		// lightbox.fadeIn(800);
 		firstBar.addClass("section-menu-rotation section-menu-time ");
 		thirdBar.addClass("section-menu-rotation-back section-menu-time ");
 		secondBar.fadeOut("fast");
-		butonCount++;
-		if(butonCount > 2){
-			butonCount = 2;
-			lightbox.slideUp(800);
-			// lightbox.fadeOut(800);
+		$(this).css('z-index', 1000);
+		$(this).css({"opacity": 1});
+		// //lightbox.animate({width:'toggle'},800);
+		// //lightbox.slideDown(800);
+		lightbox.fadeIn(700);
+		console.log(butonCount);
+		butonCount += 1;
+		console.log(butonCount);
+		if(butonCount > 1){
+			butonCount = 1;
+			//lightbox.slideUp(800);
+			lightbox.fadeOut(700);
 			firstBar.toggleClass("section-menu-rotation section-menu-time ");
-			thirdBar.toggleClass("section-menu-rotation-back section-menu-time ");
+		 thirdBar.toggleClass("section-menu-rotation-back section-menu-time ");
 			secondBar.fadeIn("slow");
 			butonCount--;
 		}
 	
-
-		
-
-
-
-
 
 
 
