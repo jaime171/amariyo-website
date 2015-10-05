@@ -8,6 +8,7 @@ html,body{
 }
 a{
 	text-decoration: none;
+	outline: 0;
 }
 section{
 	position: absolute;
@@ -220,57 +221,32 @@ footer a{
 	border-radius: 15px;
 }
 #section-1{
-	height: 280px;
-	width: 280px;
 	left: 0;
 	background: url(../img/social-menu.jpg) no-repeat center center ;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 #section-2{
 	left: 50%;
-	margin-left: -140px;
-	height: 280px;
-	width: 280px;
+	margin-left: -130px;
 	background: url(../img/web-menu.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;	
 }
 #section-2 p{
 	padding-top: 90px; 
 	line-height: 50px;
 }	
 #section-3{
-	height: 280px;
-	width: 280px;
 	right: 0;
 	background: url(../img/portafolio-menu.jpg) no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 #section-4{
 	top: 55%;
-	height: 280px;
-	width: 280px;
 	left: 12%;
-	background: url(../img/portafolio-menu.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background: url(../img/analytics-menu.jpg) no-repeat center center;
 }
 #section-5{
 	top: 55%;
 	right: 12%;
 	bottom: 1000px;
-	height: 280px;
-	width: 280px;
 	background: url(../img/branding-menu.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 .black-filter{
 	background-color: black;
@@ -282,7 +258,7 @@ footer a{
 	height: 100%;
 	opacity: .6;
 	text-transform: uppercase;
-	line-height: 280px;
+	line-height: 260px;
 	display: table;
     width: 100%;
 }
@@ -308,46 +284,19 @@ footer a{
 		line-height: initial;
 	}
 	#section-1{
-		height: 12%;
-		width: 290px;
 		top: 17%;
-		left: 307px;
-		margin-left: 0;
-		font-size: 40% !important;
-		vertical-align: middle;
-		line-height: 26px;
 	}
 	#section-2{
-		height: 12%;
-		width: 290px;
 		top: 30%;
-		left: 307px;
-		margin-left: 0;
-		font-size: 40% !important;	
 	}		
 	#section-3{
-		height: 12%;
-		width: 290px;
 		top: 43%; 
-		left: 307px;
-		margin-left: 0;
-		font-size: 40% !important;	
 	}
 	#section-4 {
-		height: 12%;
-		width: 290px; 
 		top: 56%;
-		left: 307px;
-		margin-left: 0;
-		font-size: 40% !important;	
 	}
 	#section-5 {
-		height: 12%; 
-		width: 290px;
 		top: 69%; 
-		left: 307px;
-		margin-left: 0;
-		font-size: 40% !important;	
 	}
 	.section_2{
 		font-size: 30px;
@@ -380,11 +329,20 @@ footer a{
 		margin-top: 0;
 	}
 	/* ====== ====== ====== ====== ====== Helpers phone Query====== ====== ====== ====== ======*/
+	.lightbox-menu .center-menu{
+		height: 12%; 
+		width: 290px;
+		left: 307px !important;
+		margin-left: 0 !important;
+		font-size: 40% !important;	
+	}
 	.center-menu-item{
-		padding-top: 20px !important;
+		padding-top: 0px !important;
    	 	line-height: initial !important;
    	 	letter-spacing: 1px;
    	 	font-size: 20px;
+   	 	display: table-cell;
+    	vertical-align: middle;
 	}
 	.section-titles{
 		font-size: 28px !important;
@@ -400,9 +358,12 @@ footer a{
 	.wrapper-web-dev .description-container	h2{
 		font-size: 19px;
 	}
+	.portafolio-items-1 {
+	    margin-top: 160px;
+	}
 }
 /*=========================== Phone (landscape small tablet) media query ===========================*/
-@media (min-width:501px) and  (max-width:650px){
+@media (min-width:501px) and (max-width:650px){
 	.section_2{
 		font-size: 35px;
 	}
@@ -453,6 +414,9 @@ footer a{
 	.section_5 p{
 		font-size: 19px;
         margin-top: initial;
+	}
+	.portafolio-items-1 {
+	    margin-top: 160px;
 	}
 	/* ====== ====== ====== ====== ====== Helpers phone/Tablet Query====== ====== ====== ====== ======*/
 	.center-menu{
@@ -510,10 +474,12 @@ footer a{
 		line-height: 26px !important;
 	}
 	.center-menu-item{
-		padding-top: 18px !important;
+		padding-top: 0 !important;
    	 	line-height: initial !important;
    	 	letter-spacing: 1px;
    	 	font-size: 28px;
+   	 	display: table-cell;
+    	vertical-align: middle;
 	}
 	/* ====== ====== ====== ====== ====== Social Media Section Query ====== ====== ====== ====== ======*/
 	.description-container li{
@@ -525,56 +491,19 @@ footer a{
 	#icon_6 {
 	    margin-left: initial;
 	}
-}
-@media (min-width:1000px){
-/*	#icon_5 {
-	    margin-left: 94px;
+	.portafolio-items-1 {
+	    margin-top: 160px;
 	}
-	#icon_6 {
-	    margin-left: 12px;
-	}*/
 }
-/* ====== ====== ====== ====== ====== Helpers ====== ====== ====== ====== ======*/
-.filter{
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	position: absolute;
-	display: block;
-	opacity: .6;
-	top: 0;
+@media (min-width:938px){
+	.section-menu-full-screen{
+		width: 260px;
+		height: 260px;
+	}
+	.portafolio-items-1 {
+	    margin-top: 50px;
+	}
 }
-.section-titles{
-	letter-spacing: 0;
-	padding: 10% 5% 0 5%;
-	color: white;
-	font-size: 38px;
-	font-family: 'Lato', sans-serif;
-	font-style: italic;
-	position: absolute;
-	font-weight: 500 !important;
-}
-.description-container{
-	width: 100%;
-	position: absolute;
-	top: 85%;
-	font-family: 'Lato', sans-serif;
-}
-.description-container li{
-	color: white;
-	font-size: 20px;
-}		
-.description-container p {
-	padding: 0 35px 35px 35px;
-}
-.section-full-screen{
-	webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-}		
 /* ====== ====== ====== ====== ====== Social Media Section ====== ====== ====== ====== ======*/
 .wrapper-social-media{
 	background: url(../img/socialmedia.jpg) no-repeat center center; 
@@ -605,7 +534,70 @@ footer a{
 }
 /* ====== ====== ====== ====== ====== Portfolio Section ====== ====== ====== ====== ======*/
 .wrapper-portfolio{
-	background: url(../img/portfolio.jpg) no-repeat center center;
+	/*background: url(../img/portfolio.jpg) no-repeat center center;*/
+	/*background: url(../img/textura-portfolio.png);*/
+}
+.wrapper-portfolio h1{
+	color: #353536;
+	font-family: Oswald,sans-serif;
+	margin-top: 20px;
+	font-size: 50px;
+	letter-spacing: 1px;
+	border-bottom: solid 5px #00A9AB;
+}
+.portfolio-items{
+    height: 600px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -210px;
+}
+.portfolio-items h4{
+	text-transform: uppercase;
+    color: white;
+    font-family: Oswald,sans-serif;
+    letter-spacing: 1px;
+	margin-top: 135px;
+    position: absolute;
+    z-index: 1;
+    font-size: 19px;
+    display: none;
+
+}
+.portfolio-items #item-1{
+	background: url(../img/01.png)no-repeat center center;
+	background-size: 60%;
+}
+.portfolio-items #item-2{
+	background: url(../img/02.png)no-repeat center center;
+	background-size: 60%;
+}
+.portfolio-items #item-3{
+	background: url(../img/03.png)no-repeat center center;
+	background-size: 60%;
+}
+.portfolio-items #item-4{
+	background: url(../img/04.png)no-repeat center center;
+	background-size: 60%;
+}
+.portfolio-items #item-1 h4{
+	margin-left: 7px;
+}
+.portfolio-items #item-2 h4{
+	margin-left: 86px;
+}
+.portfolio-items #item-3 h4{
+	margin-left: 56px;
+}
+.portfolio-items #item-4 h4{
+	margin-left: 81px;
+}
+.portfolio-items #item-1, #item-2, #item-3, #item-4{
+    height: 290px;
+    width: 290px;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
 }
 /* ====== ====== ====== ====== ====== Seo Section ====== ====== ====== ====== ======*/
 .wrapper-seo{
@@ -630,4 +622,127 @@ footer a{
 }
 .wrapper-branding .description-container li{
 	padding: 8px 0 0 0;
+}
+/* ====== ====== ====== ====== ====== Helpers ====== ====== ====== ====== ======*/
+.items:hover{
+	cursor: pointer;
+}
+.filter{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	display: block;
+	opacity: .6;
+	top: 0;
+}
+.hover-filter{
+	background: black;
+    height: 100%;
+    opacity: .6;
+    display: none;
+}
+.section-titles{
+	letter-spacing: 0;
+	padding: 10% 5% 0 5%;
+	color: white;
+	font-size: 38px;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	position: absolute;
+	font-weight: 500 !important;
+}
+.description-container{
+	width: 100%;
+	position: absolute;
+	top: 85%;
+	font-family: 'Lato', sans-serif;
+}
+.description-container li{
+	color: white;
+	font-size: 20px;
+	list-style: none;
+}		
+.description-container p {
+	padding: 0 35px 35px 35px;
+}
+.section-full-screen{
+	webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.section-menu-full-screen{
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+}
+
+/* ====== ====== ====== ====== ====== Contacto ====== ====== ====== ====== ======*/
+.wrapper_contacto{
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	background: url(../img/background.jpg) no-repeat center center;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.formulario {
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -250px;
+}
+.formulario h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: Oswald,sans-serif;
+    font-size: 27px;
+    letter-spacing: .2px;
+    padding-top: 30px;
+}
+.formulario textarea {
+    overflow: auto;
+    margin-top: 65px;
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    height: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255,255,255,0.3);
+    padding-left: 6px;
+}
+.formulario #boton {
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    width: 150px;
+    height: 35px;
+    margin-left: -75px;
+    border-radius: 10px;
+    border: none;
+    font-family: Oswald,sans-serif;
+    font-size: 23px;
+    color: white;
+}
+.formulario input {
+    line-height: normal;
+    width: 300px;
+    margin-left: 4px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 35px;
+    background-color: rgba(255,255,255,0.3);
+    padding-left: 6px;
 }
