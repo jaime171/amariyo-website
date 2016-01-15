@@ -21,8 +21,8 @@ $(function(){
 		thirdBar.addClass("section-menu-rotation-back section-menu-time ");
 		secondBar.fadeOut("fast");
 		$(this).css('z-index', 1000);
-		$(this).css({"opacity": 1});
-		// //lightbox.animate({width:'toggle'},800);
+		// $(this).css({"opacity": 1});
+		//lightbox.animate({width:'toggle'},800);
 		// //lightbox.slideDown(800);
 		lightbox.fadeIn(700);
 		console.log(butonCount);
